@@ -1,0 +1,1484 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+/*MY CODES*/
+
+* {
+text-decoration: none;
+}
+
+#container {
+  min-height: 100%;
+}
+
+#main {
+  overflow: auto;
+  padding-bottom: 100px;
+}
+
+main {
+  padding-top: 110px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 110px;
+}
+
+header .header-brand {
+  font-family: Catamaran;
+  font-size: 28px;
+  font-weight: 900;
+  color: #111;
+  display: block;
+  margin: 10px 10px 5px 0;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+header nav ul {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+header nav ul li {
+  display: inline-block;
+  float: left;
+  list-style: none;
+  padding: 0 16px;
+}
+
+header nav ul li a {
+  font-family: Catamaran;
+  font-size: 16px;
+  color: #111;
+  text-transform: uppercase;
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+  header .header-brand {
+    font-size: 40px;
+    margin: 20px 0;
+    text-align: left;
+    line-height: 30px;
+    padding: 20px 20px 20px 40px;
+    border-right: 3px solid #111;
+    float: left;
+  }
+
+  header nav ul {
+    margin: 27px  10px 10px 10px;
+    float: left;
+  }
+
+  header nav ul li a {
+    line-height: 60px;
+    font-size: 23px;
+  }
+
+
+
+/*I didn't include the login button*/
+
+}
+
+
+/*INDEX BANNER*/
+
+
+
+.index-banner {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-image: url('img/banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table;
+}
+
+.vertical-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+.index-banner h2{
+  font-family: Catamaran;
+  font-size: 65px;
+  font-weight: 900;
+  line-height: 75px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.index-banner h1{
+  font-family: Cormorant Garamond;
+  font-size: 28px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+}
+
+
+/*INDEX BOXES, including the quizzes, sicussion, chapters,units and etc*/
+
+.index-links div {
+  margin: 16px 16px 0;
+  width: calc(100% - 32px);
+  height: 100px;
+  background-color: #f2f2f2;
+}
+
+.index-links div h3 {
+  font-family: Catamaran;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 100px;
+  color: #111;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1000px) {
+  .wrapper {
+      width: 1000px;
+      margin: 0 auto;
+  }
+
+  .index-banner {
+    height: 450px;
+  }
+
+  .index-banner h2{
+    font-size: 80px;
+    line height: 100;
+    padding-bottom: 30px;
+  }
+
+  .index-banner h1{
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .index-links {
+    overflow: hidden;
+  }
+
+  .index-links div {
+    margin: 20px 10px 0;
+    height: 230px;
+    background-color: #f2f2f2;
+    float: left;
+  }
+
+  .index-boxlink-square {
+        width: calc(25% - 20px) !important;
+  }
+
+  .index-boxlink-rectangle {
+        width: calc(50% - 20px) !important;
+  }
+
+  .index-links div h3 {
+    line-height: 230px;
+  }
+
+}
+
+/*CHAPTERS*/
+
+
+.chapters-links {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.chapters-links h2 {
+  font-family: Catamaran;
+  font-size: 30px;
+  font-weight: 750;
+  color: #111;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.chapters-links .chapters-links {
+  margin: 16px 16px 0;
+  width: calc(100% - 32px);
+  height: 100px;
+  background-color: #f2f2f2;
+}
+
+.chapters-links div p {
+  font-family: Catamaran;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 100px;
+  color: #111;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+  .chapters-links {
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  .chapters-links h2 {
+    font-family: Catamaran;
+    font-size: 30px;
+    font-weight: 750;
+    color: #111;
+    text-transform: uppercase;
+    padding: 20px;
+  }
+
+  .chapters-links .chapters-links {
+    margin: 16px 16px 0;
+    width: calc(100% - 32px);
+    height: 100px;
+    background-color: #f2f2f2;
+  }
+
+  .chapters-links .chapters-links {
+    float: left;
+    width: 313px;
+    height: 313px;
+    margin: 20px 10px 0px;
+    background-color: #e3e3e3;
+  }
+
+  .chapters-links .chapters-links p {
+    padding-top: 35%;
+    font-family: Catamaran;
+    font-size: 24px;
+    font-weight: 650;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+}
+
+/*LAMAN NG UNITS FROM HOMEPAGE*/
+
+.unit-links {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.unit-links h4 {
+  font-family: Catamaran;
+  font-size: 35px;
+  font-weight: 800;
+  color: #111;
+  text-align: center;
+  padding: 20px;
+  text-shadow: 2px 2px 8px #f5f5f5;
+  text-transform: uppercase;
+}
+
+.unit-links .preface-input {
+  text-indent: 48px;
+  font-family: Cormorant Garamond;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: justify;
+  padding: 20px;
+  padding-top: 0px;
+  line-height: 25px;
+}
+
+
+.unit-links h2 {
+  font-family: Catamaran;
+  font-size: 30px;
+  font-weight: 750;
+  color: #111;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.unit-links .unit-links {
+  margin: 16px 16px 0;
+  width: calc(100% - 32px);
+  height: 100px;
+  background-color: #f2f2f2;
+}
+
+.unit-links div h3 {
+  font-family: Catamaran;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 100px;
+  color: #111;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+  .unit-links .preface-input {
+    padding-top: 10px;
+  }
+
+  .unit-links .unit-links {
+    float: left;
+    width: 230px;
+    height: 230px;
+    margin: 20px 10px 0px;
+    background-color: #e9e9e9;
+  }
+
+  .unit-links .unit-links h3 {
+    padding-top: 30%;
+    font-family: Catamaran;
+    font-size: 24px;
+    font-weight: 650;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+}
+
+/*LAMAN NG UNIT 1 UNIT OVERVIEW*/
+
+.unit-overview {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.unit-overview h4 {
+  font-family: Catamaran;
+  font-size: 35px;
+  font-weight: 800;
+  color: #111;
+  text-align: center;
+  padding-top: 20px;
+  text-shadow: 2px 2px 8px #f5f5f5;
+  text-transform: uppercase;
+}
+
+.unit-overview h3 {
+  font-family: Catamaran;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 60px;
+  color: #111;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.unit-overview h2 {
+  font-family: Catamaran;
+  font-size: 24px;
+  font-weight: 750;
+  color: #111;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+
+.unit-overview .input-overview {
+  text-indent: 48px;
+  font-family: Cormorant Garamond;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: justify;
+  padding: 20px 20px;
+  line-height: 25px;
+}
+
+
+.unit-overview .input-overview {
+  margin: 16px 16px 0;
+  width: 0 auto;
+  height: 0 auto;
+  background-color: #f2f2f2;
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+  .unit-overview {
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  .unit-overview h2 {
+    font-family: Catamaran;
+    font-size: 30px;
+    font-weight: 750;
+    color: #111;
+    text-transform: uppercase;
+    padding: 20px;
+  }
+
+  .unit-overview .input-overview {
+    padding-top: 10px;
+  }
+
+  .unit-overview .unit-links {
+    margin: 16px 16px 0;
+    width: calc(100% - 32px);
+    height: 100px;
+    background-color: #f2f2f2;
+  }
+
+  .unit-overview .unit-links {
+    float: left;
+    width: 230px;
+    height: 230px;
+    margin: 20px 10px 0px;
+    background-color: #e3e3e3;
+  }
+
+  .unit-overview .unit-links h3 {
+    padding-top: 30%;
+    font-family: Catamaran;
+    font-size: 24px;
+    font-weight: 650;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+}
+
+/*Laman ng unit 1, chapter links*/
+
+.unit-chapters .unit-in-chapters {
+  margin: 16px 16px 0;
+  width: calc(100% - 32px);
+  height: 100px;
+  background-color: #C5CFFF;
+}
+
+.unit-chapters .unit-in-chapters h2 {
+  font-family: Catamaran;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 100px;
+  color: #111;
+  text-align: center;
+}
+
+/**/
+
+
+.unit-chapters {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.unit-chapters .unit-in-chapters {
+  margin: 16px 16px 0;
+  width: calc(100% - 32px);
+  height: 100px;
+  background-color: #C5CFFF;
+}
+
+.unit-chapters div h2 {
+  font-family: Catamaran;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 100px;
+  color: #111;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*solo chapters per unit, from unit 2-4*/
+
+.solo-chapters {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.solo-chapters .solo-chapters-in-unit {
+  margin: 16px 16px 0;
+  width: calc(100% - 32px);
+  height: 100px;
+  background-color: #C5CFFF;
+}
+
+.solo-chapters div h2 {
+  font-family: Catamaran;
+  font-size: 24px;
+  font-weight: 650;
+  line-height: 100px;
+  color: #111;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+
+  .unit-chapters .unit-in-chapters {
+    float: left;
+    width: 313px;
+    height: 313px;
+    margin: 20px 10px 0px;
+    background-color: #C5CFFF;
+}
+
+
+  .unit-chapters .unit-in-chapters h2 {
+    padding-top: 35%;
+    font-family: Catamaran;
+    font-size: 24px;
+    font-weight: 650;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .solo-chapters .solo-chapters-in-unit {
+    margin: 16px 16px 16px 16px;
+  }
+
+
+
+}
+
+
+
+/*chapter-s*/
+
+.chapter-overview h4 {
+  font-family: Catamaran;
+  font-size: 35px;
+  font-weight: 800;
+  color: #111;
+  text-align: center;
+  padding-top: 20px;
+  text-shadow: 2px 2px 8px #f5f5f5;
+  text-transform: uppercase;
+}
+
+.chapter-overview h3 {
+  font-family: Catamaran;
+  font-size: 28px;
+  font-weight: 600;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  line-height: 40px;
+  color: #111;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.chapter-overview p {
+  text-indent: 48px;
+  font-family: Cormorant Garamond;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: justify;
+  padding: 20px 20px;
+  line-height: 25px;
+}
+
+.chapter-overview p {
+  margin: 0px 16px 0;
+  width: 0 auto;
+  height: 0 auto;
+  background-color: #f2f2f2;
+}
+
+/*chapter 1 topics*/
+
+.chapter-topics .special-chapters-membrane{
+  margin: 16px 16px 0;
+  width: calc(100% - 32px);
+  height: 100px;
+  background-color: #FFE7C5;
+}
+
+.chapter-topics {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.chapter-topics .topics-in-chapters {
+  margin: 16px 16px 0;
+  width: calc(100% - 32px);
+  height: 100px;
+  background-color: #FFE7C5;
+}
+
+.chapter-topics div h2 {
+  font-family: Catamaran;
+  font-size: 24px;
+  font-weight: 650;
+  line-height: 100px;
+  color: #111;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1000px) {
+
+  .chapter-topics .special-chapters-membrane h2{
+    padding-top: 35px;
+}
+
+  .chapter-topics .topics-in-chapters {
+    float: left;
+    width: 313px;
+    height: 313px;
+    margin: 20px 10px 0px;
+    background-color: #FFE7C5;
+}
+
+.chapter-topics div h2 {
+  padding-top: 50px;
+  line-height: 35px;
+}
+
+  .chapter-topics .topics-in-chapters h2 {
+    padding-top: 40%;
+    font-family: Catamaran;
+    font-size: 24px;
+    font-weight: 650;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+}
+
+/*chapter 4 - 8 boxes*/
+
+.chapter-4-top {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.chapter-4-top h4 {
+  font-family: Catamaran;
+  font-size: 35px;
+  font-weight: 800;
+  color: #111;
+  text-align: center;
+  padding-top: 20px;
+  text-shadow: 2px 2px 8px #f5f5f5;
+  text-transform: uppercase;
+}
+
+.chapter-4-top h3 {
+  font-family: Catamaran;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 40px;
+  color: #111;
+  padding-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+.chapter-4-top h1 {
+  font-family: Catamaran;
+  font-size: 24px;
+  font-weight: 650;
+  line-height: 35px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #111;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+.chapter-4-top .overview-chapter-4 {
+  padding-top: 40px;
+}
+
+
+.chapter-4-top p {
+  text-indent: 48px;
+  font-family: Cormorant Garamond;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: justify;
+  padding: 20px 20px;
+  line-height: 25px;
+}
+
+.chapter-4-top p {
+  margin: 0px 16px 0;
+  width: 0 auto;
+  height: 0 auto;
+  background-color: #f2f2f2;
+}
+
+
+
+.chapter-4-top .special-topics-in-chapter-4 {
+  font-family: Catamaran;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 35px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #111;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.chapter-4-top .special-topics-in-chapter-4 {
+  margin: 16px 16px 0;
+  width: 0 auto;
+  height: 0 auto;
+  background-color: #FFE7C5;
+}
+
+
+
+
+
+@media only screen and (min-width: 1000px) {
+
+  .chapter-4-top .topics-in-chapter-4 {
+    text-indent: 0px;
+}
+
+  .chapter-4-top .topics-in-chapter-4 {
+    float: left;
+    width: 230px;
+    height: 230px;
+    margin: 20px 10px 0px;
+    background-color: #FFE7C5;
+  }
+
+  .chapter-4-top div h1 {
+    line-height: 35px;
+  }
+
+  .chapter-4-top h1 {
+    padding-top: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .chapter-4-top .special-topics-in-chapter-4 h1{
+    padding-top: 55px;
+  }
+
+  .chapter-4-top .special-topics-in-chapter-4 {
+        float: left;
+        width: 230px;
+        height: 215px;
+        margin: 20px 10px 0px;
+        background-color: #FFE7C5;
+      }
+
+}
+
+/*chapter 5*/
+
+
+.chapters-5 {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.chapters-5 h4 {
+  font-family: Catamaran;
+  font-size: 30px;
+  font-weight: 750;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.chapters-5 h3 {
+  font-family: Catamaran;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 40px;
+  color: #111;
+  padding-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+.chapters-5 .chapters-5-lessons {
+  margin: 16px 16px 0;
+  width: calc(100% - 32px);
+  height: 100px;
+  background-color: #FFE7C5;
+}
+
+
+.chapters-5 div h1 {
+  font-family: Catamaran;
+  font-size: 24px;
+  font-weight: 650;
+  line-height: 35px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #111;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.chapter-5 .overview-chapter-4 {
+  padding-top: 40px;
+}
+
+
+.chapters-5 p {
+  text-indent: 48px;
+  font-family: Cormorant Garamond;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: justify;
+  padding: 20px 20px;
+  line-height: 25px;
+}
+
+.chapters-5 p {
+  margin: 0px 16px 0;
+  width: 0 auto;
+  height: 0 auto;
+  background-color: #f2f2f2;
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+  .chapters-5 {
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  .chapters-5 h4 {
+    font-family: Catamaran;
+    font-size: 30px;
+    font-weight: 750;
+    color: #111;
+    text-transform: uppercase;
+    padding: 20px;
+  }
+
+  .chapters-5 .chapters-5-lessons-square {
+    margin: 16px 16px 0;
+    width: calc(100% - 32px);
+    height: 100px;
+    background-color: #FFE7C5;
+  }
+
+  .chapters-5 .chapters-5-lessons-square {
+    float: left;
+    width: 313px;
+    height: 313px;
+    margin: 20px 10px 0px;
+    background-color: #FFE7C5;
+  }
+
+  .chapters-5 .chapters-5-lessons-rectangle {
+    float: left;
+    width: 646px;
+    height: 313px;
+    margin: 20px 0px 0px 10px;
+    background-color: #FFE7C5;
+  }
+
+.chapters-5 .chapters-5-lessons-square h1 {
+    padding-top: 40%;
+    padding-bottom: 40px;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+
+  .chapters-5 .chapters-5-lessons-rectangle h1 {
+      padding-top: 19.3%;
+      color: #111;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+}
+
+/*TOPICS HIWA-HIWALAY*/
+
+
+.all-topics {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.all-topics h2 {
+  font-family: Catamaran;
+  font-size: 35px;
+  font-weight: 800;
+  color: #111;
+  text-align: center;
+  padding-top: 20px;
+  text-shadow: 2px 2px 8px #f5f5f5;
+  text-transform: uppercase;
+}
+
+.all-topics h1 {
+  font-family: Catamaran;
+  font-size: 24px;
+  font-weight: 650;
+  line-height: 35px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #111;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.all-topics .all-topics{
+  margin: 16px 16px 0;
+  width: 0 auto;
+  height: 0 auto;
+  background-color: #f2f2f2;
+}
+
+.all-topics .special-all-topics {
+  font-family: Catamaran;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 35px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #111;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.all-topics .special-all-topics{
+  margin: 16px 16px 0;
+  width: 0 auto;
+  height: 0 auto;
+  background-color: #f2f2f2;
+}
+
+@media only screen and (min-width: 1000px) {
+
+  .all-topics .all-topics {
+    float: left;
+    width: 230px;
+    height: 230px;
+    margin: 20px 10px 0px;
+    background-color: #f2f2f2;
+  }
+
+  .all-topics div h1 {
+    line-height: 35px;
+  }
+
+  .all-topics h1 {
+    padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 20px 20px;
+  }
+
+  .all-topics .special-all-topics h1{
+    padding-top: 20px;
+  }
+
+  .all-topics .special-all-topics {
+        float: left;
+        width: 230px;
+        height: 215px;
+        margin: 20px 10px 0px;
+        background-color: #f2f2f2;
+      }
+
+  .all-topics .all-topics-rectangle h1{
+        padding-top: 60px;
+      }
+
+  .all-topics .all-topics-rectangle {
+        float: left;
+        width: 479px;
+        height: 230px;
+        margin: 20px 10px 0px;
+        background-color: #f2f2f2;
+      }
+
+}
+
+/*DISCUSSION VIDEOS*/
+
+.no-position {
+  position: absolute;
+}
+
+
+.discussion-videos h4{
+    font-family: Catamaran;
+    font-size: 30px;
+    font-weight: 750;
+    color: #111;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+  }
+
+.discussion-videos p{
+  text-indent: 48px;
+  font-family: Cormorant Garamond;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: justify;
+  padding: 20px 20px;
+  line-height: 25px;
+}
+
+
+.discussion-videos .wrapper {
+    max-width: 600px;
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.iframe-container iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 1000px) {
+.discussion-videos p {
+  padding: 20px 20px;
+  line-height: 35px;
+  margin: 30px 300px;
+}
+}
+
+/*quizzes or activities*/
+
+.quizzes h4{
+  font-size: 35px;
+  font-family: Catamaran;
+  font-weight: 700;
+  text-align: center;
+  text-decoration-color: #111;
+  line-height: 60px;
+}
+
+.quizzes h3{
+  font-size: 24px;
+  font-family: Catamaran;
+  font-weight: 650;
+  text-align: center;
+  text-decoration-color: #111;
+}
+
+
+/*activities*/
+
+.activity-pdf h4 {
+  font-size: 35px;
+  font-family: Catamaran;
+  font-weight: 700;
+  text-align: center;
+  text-decoration-color: #111;
+  line-height: 60px;
+}
+
+.activity-pdf .pdf-viewer {
+  padding-left: 20px;
+  padding-right: 20px;
+  align-content: center;
+  padding-top: 20px;
+  margin-top: 20px;
+  margin: 20px 0px 0;
+  width: 90%;
+  height: 100vh;
+text-align: center;
+padding-bottom: 20px;
+}
+
+.activity-pdf .pdf-viewer embed {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 20px 0px 0;
+  width: 90%;
+  height: 100vh;;
+text-align: center;
+}
+
+@media only screen and (max-width: 414px) {
+  .activity-pdf .pdf-viewer {
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin: 20px 0px 0;
+    width: 90%;
+    height: 100vh;
+    padding-bottom: 20px;
+  }
+
+  .activity-pdf .pdf-viewer embed {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px 0px 0;
+    width: 90%;
+    height: 88vh;
+  text-align: center;
+    padding-bottom: 30px;
+}
+}
+
+
+
+
+@media only screen and (min-width: 1000px) {
+
+
+.activity-pdf .pdf-viewer {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+.activity-pdf .pdf-viewer {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .activity-pdf .pdf-viewer {
+    width: 100%;
+    height: 660px;
+    padding-left: 0px;
+    padding-right: 20px;
+
+  }
+
+  .activity-pdf .pdf-viewer embed {
+    width: 70%;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 16px 16px 0;
+  }
+
+
+
+}
+
+
+/*ABOUT BIOLEARN*/
+
+.about-us h4 {
+  font-size: 40px;
+  font-family: Catamaran;
+  font-weight: 900;
+  text-align: center;
+  text-decoration-color: #111;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.about-us .about-us-statement h3 {
+  font-size: 24px;
+  font-family: Catamaran;
+  font-weight: 650;
+  text-align: left;
+  text-decoration-color: #111;
+}
+
+.about-us .about-us-statement p {
+  text-indent: 48px;
+  font-family: Cormorant Garamond;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: justify;
+  padding: 20px 20px;
+  line-height: 25px;
+}
+
+
+/*CONTACT US BIOLEARN*/
+
+
+.contact-us h4 {
+  font-size: 40px;
+  font-family: Catamaran;
+  font-weight: 900;
+  text-align: center;
+  text-decoration-color: #111;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.contact-us .contact-us-statement h3 {
+  font-size: 24px;
+  font-family: Catamaran;
+  font-weight: 650;
+  text-align: left;
+  text-decoration-color: #111;
+}
+
+.contact-us .contact-us-statement p {
+  text-indent: 48px;
+  font-family: Cormorant Garamond;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: justify;
+  padding: 20px 20px;
+  line-height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+
+footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  width: calc(100% - 80px);
+  font-family: Catamaran;
+  padding-top: 20px;
+  margin-top: 20px;
+  margin: 16px 16px 0;
+  width: calc(100% - 32px);
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h5{
+  font-size: 1.8rem;
+  font-weight: 750;
+  text-transform: capitalize;
+  line-height: 3rem;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  font-family: "Brush Script MT";
+  word-spacing: 2px;
+  line-height: 28px;
+  font-size: 20px;
+  font-weight: 2px;
+}
+
+.socials {
+  list-style: none;
+  display: block;
+  align-items: center;
+  line-height: 30px;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.socials a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.socials a i {
+  font-size: 1.1rem;
+  transition: color .4s ease;
+}
+
+.socials a:hover i{
+  color: aqua;
+}
+
+.footer-bottom {
+  background: #000;
+  padding: 20px 0;
+  margin: 0 auto;
+  width: calc(100% - 0px);
+  text-align: center;
+}
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+  line-height: 23px;
+}
+
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+
+  footer {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .footer-bottom {
+
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+}
